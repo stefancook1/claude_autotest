@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PySOAR Prep — Staff SOAR Engineer Interview Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="app-shell">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" id="brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+          <span class="brand-name">PySOAR<span class="accent">Prep</span></span>
+          <span class="brand-sub">Staff SOAR Engineer</span>
+        </div>
+      </div>
+
+      <div class="progress-card">
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 80 80">
+            <circle class="ring-bg" cx="40" cy="40" r="34"/>
+            <circle class="ring-fg" id="ring-fg" cx="40" cy="40" r="34"/>
+          </svg>
+          <span class="ring-label" id="ring-label">0%</span>
+        </div>
+        <div class="progress-meta">
+          <strong>Overall mastery</strong>
+          <span id="progress-detail">0 of 0 modules done</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav"><!-- populated by JS --></nav>
+
+      <button class="reset-btn" id="reset-btn" title="Reset all progress">↺ Reset progress</button>
+    </aside>
+
+    <!-- Mobile top bar -->
+    <header class="mobile-bar">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+      <span class="mobile-title">PySOAR Prep</span>
+    </header>
+
+    <!-- Main content -->
+    <main class="main" id="main">
+      <div class="view" id="view"><!-- populated by JS --></div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
